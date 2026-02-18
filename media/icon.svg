@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="node-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#e0e7ff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="url(#bg-gradient)"/>
+  
+  <!-- Central orchestrator circle -->
+  <circle cx="64" cy="64" r="44" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
+  <circle cx="64" cy="64" r="32" stroke="white" stroke-width="2" fill="none" opacity="0.5"/>
+  
+  <!-- Central hub -->
+  <circle cx="64" cy="64" r="12" fill="white"/>
+  <circle cx="64" cy="64" r="6" fill="#6366f1"/>
+  
+  <!-- Model nodes -->
+  <!-- Top (OpenAI - Green) -->
+  <circle cx="64" cy="28" r="10" fill="#10a37f"/>
+  <text x="64" y="32" text-anchor="middle" fill="white" font-size="10" font-weight="bold">O</text>
+  <line x1="64" y1="38" x2="64" y2="52" stroke="white" stroke-width="2"/>
+  
+  <!-- Right (Anthropic - Orange) -->
+  <circle cx="100" cy="64" r="10" fill="#cc785c"/>
+  <text x="100" y="68" text-anchor="middle" fill="white" font-size="10" font-weight="bold">A</text>
+  <line x1="90" y1="64" x2="76" y2="64" stroke="white" stroke-width="2"/>
+  
+  <!-- Bottom (Gemini - Blue) -->
+  <circle cx="64" cy="100" r="10" fill="#4285f4"/>
+  <text x="64" y="104" text-anchor="middle" fill="white" font-size="10" font-weight="bold">G</text>
+  <line x1="64" y1="90" x2="64" y2="76" stroke="white" stroke-width="2"/>
+  
+  <!-- Left (Moonshot - Purple) -->
+  <circle cx="28" cy="64" r="10" fill="#9333ea"/>
+  <text x="28" y="68" text-anchor="middle" fill="white" font-size="10" font-weight="bold">K</text>
+  <line x1="38" y1="64" x2="52" y2="64" stroke="white" stroke-width="2"/>
+</svg>
