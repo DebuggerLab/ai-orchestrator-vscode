@@ -1,179 +1,252 @@
-# AI Orchestrator - VS Code Extension
+# AI Orchestrator - Multi-Model AI Assistant
 
-![AI Orchestrator](media/icon.png)
+<p align="center">
+  <img src="media/icon.png" alt="AI Orchestrator Logo" width="128" height="128">
+</p>
 
-**Intelligently orchestrate multiple AI models for complex development tasks**
+<p align="center">
+  <strong>Intelligently orchestrate multiple AI models for complex development tasks</strong>
+</p>
 
-AI Orchestrator automatically routes your tasks to the best-suited AI models (ChatGPT, Claude, Gemini, Kimi) based on task type, then consolidates the results into a unified output.
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=debugger-lab.ai-orchestrator">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/debugger-lab.ai-orchestrator?style=flat-square&logo=visual-studio-code&logoColor=white&label=VS%20Marketplace&color=7c3aed" alt="VS Marketplace Version">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=debugger-lab.ai-orchestrator">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/debugger-lab.ai-orchestrator?style=flat-square&logo=visual-studio-code&logoColor=white&label=Installs&color=10a37f" alt="Installs">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=debugger-lab.ai-orchestrator">
+    <img src="https://img.shields.io/visual-studio-marketplace/r/debugger-lab.ai-orchestrator?style=flat-square&logo=visual-studio-code&logoColor=white&label=Rating&color=f59e0b" alt="Rating">
+  </a>
+  <a href="https://github.com/debugger-lab/ai-orchestrator-vscode/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/debugger-lab/ai-orchestrator-vscode?style=flat-square&color=4285f4" alt="License">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#%EF%B8%8F-configuration">Configuration</a> •
+  <a href="#-usage">Usage</a> •
+  <a href="#-support">Support</a>
+</p>
+
+---
+
+## 🎯 Why AI Orchestrator?
+
+Stop switching between ChatGPT, Claude, and other AI assistants. **AI Orchestrator** automatically routes your tasks to the most suitable AI model and consolidates results into a unified output.
+
+> **The Problem:** Different AI models excel at different tasks. GPT-4 is great for architecture, Claude excels at coding, Gemini shines at reasoning.
+>
+> **The Solution:** AI Orchestrator automatically detects your task type and routes it to the best model—or uses multiple models in parallel for complex tasks.
+
+---
 
 ## ✨ Features
 
-### 🤖 Multi-Model Orchestration
-- **OpenAI (ChatGPT)**: Architecture design, roadmaps, and documentation
-- **Anthropic (Claude)**: Coding implementation and debugging
-- **Google Gemini**: Reasoning, logic, and analysis
-- **Moonshot (Kimi)**: Code review and security audits
+### 🤖 Multi-Model Support
 
-### 🎯 Smart Task Routing
-The extension automatically detects what type of task you're performing and routes it to the specialized model:
+| Provider | Model | Best For |
+|----------|-------|----------|
+| **OpenAI** | GPT-4, GPT-4 Turbo, GPT-4o | Architecture, Documentation, Roadmaps |
+| **Anthropic** | Claude 3 Opus/Sonnet/Haiku | Coding, Implementation, Debugging |
+| **Google** | Gemini Pro, Gemini 1.5 | Reasoning, Analysis, Trade-offs |
+| **Moonshot** | Kimi 8k/32k/128k | Code Review, Security Audits |
 
-| Task Type | Primary Model | Description |
-|-----------|--------------|-------------|
-| Architecture | OpenAI | System design, schemas, APIs |
-| Coding | Claude | Implementation, functions, classes |
-| Reasoning | Gemini | Analysis, trade-offs, decisions |
-| Code Review | Kimi | Quality, security, best practices |
+### 🎯 Intelligent Task Routing
 
-### 🖥️ User Interface
+The extension automatically analyzes your task and routes it to specialized models:
 
-#### Sidebar Chat Panel
-- Modern chat-like interface for entering tasks
-- Quick action buttons for common operations
-- Real-time progress updates showing active models
-- Formatted results with syntax highlighting
+```
+📝 "Design a REST API for user auth" → OpenAI (Architecture)
+💻 "Implement JWT token validation" → Claude (Coding)
+🔍 "Review this code for security" → Kimi (Code Review)
+🧠 "Compare microservices vs monolith" → Gemini (Reasoning)
+```
 
-#### Task History
-- Browse and search past orchestrations
-- Re-run previous tasks with one click
-- Export results to Markdown
+### 🖥️ Modern Chat Interface
 
-#### Status Bar
-- Always visible orchestrator status
-- Quick access to configuration and status info
+- **Sidebar Panel**: Chat-like interface for entering tasks
+- **Real-time Progress**: See which models are working
+- **Syntax Highlighting**: Beautiful code formatting in results
+- **Task History**: Browse, re-run, and export past tasks
 
-### ⚡ Commands
+### ⚡ Powerful Commands
 
-Access these from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`):
+| Command | Description | Shortcut |
+|---------|-------------|----------|
+| `AI Orchestrator: Run Task` | Submit a new task | `Ctrl+Shift+P` |
+| `AI Orchestrator: Configure` | Set up API keys | `Ctrl+Shift+P` |
+| `AI Orchestrator: Check Status` | View model status | `Ctrl+Shift+P` |
+| `Send to AI Orchestrator` | Process selected code | Right-click |
 
-| Command | Description |
-|---------|-------------|
-| `AI Orchestrator: Run Task` | Enter a new task to orchestrate |
-| `AI Orchestrator: Configure` | Set up API keys and preferences |
-| `AI Orchestrator: Check Status` | View configured models and statistics |
+### 📝 Context Menu Integration
 
-### 📝 Context Menu
+Select any code in the editor and right-click to:
+- 🔍 **Review** code quality and best practices
+- 🐛 **Debug** and identify issues
+- ♻️ **Refactor** and improve structure
+- 📚 **Document** with comments and docs
+- 💡 **Explain** complex logic
 
-Select any code in the editor, right-click, and choose **"Send to AI Orchestrator"** to:
-- Review code quality
-- Debug and fix issues
-- Improve and refactor
-- Generate documentation
-- Get explanations
+---
 
 ## 📦 Installation
 
-### From VSIX
-1. Download the `.vsix` file
-2. In VS Code, go to Extensions (`Ctrl+Shift+X`)
-3. Click the `...` menu → "Install from VSIX..."
+### From VS Code Marketplace
+
+1. Open VS Code
+2. Go to Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+3. Search for **"AI Orchestrator"**
+4. Click **Install**
+
+### From VSIX File
+
+1. Download the `.vsix` file from [Releases](https://github.com/debugger-lab/ai-orchestrator-vscode/releases)
+2. In VS Code, go to Extensions
+3. Click `...` → **"Install from VSIX..."**
 4. Select the downloaded file
 
-### From Marketplace
-Search for "AI Orchestrator" in the VS Code Extensions marketplace.
+---
 
 ## ⚙️ Configuration
 
 ### Setting Up API Keys
 
-1. Open the Command Palette (`Ctrl+Shift+P`)
-2. Run `AI Orchestrator: Configure`
-3. Select the model provider to configure
-4. Enter your API key (stored securely using VS Code's Secrets API)
+1. Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
+2. Run **"AI Orchestrator: Configure"**
+3. Select your AI provider
+4. Enter your API key
 
-You only need to configure the models you want to use. The orchestrator will automatically fall back to available models if your preferred model isn't configured.
+> 🔐 **Security**: API keys are stored securely using VS Code's Secrets API. They are never transmitted to third parties or stored in plain text.
 
-### Settings
+### Getting API Keys
 
-Configure model preferences in VS Code Settings (`Ctrl+,`):
+| Provider | Get Key | Pricing |
+|----------|---------|---------|
+| OpenAI | [platform.openai.com](https://platform.openai.com/api-keys) | Pay-per-use |
+| Anthropic | [console.anthropic.com](https://console.anthropic.com/) | Pay-per-use |
+| Google | [makersuite.google.com](https://makersuite.google.com/app/apikey) | Free tier available |
+| Moonshot | [platform.moonshot.cn](https://platform.moonshot.cn/) | Pay-per-use |
+
+### Settings Reference
 
 ```json
 {
+  // Model Selection
   "aiOrchestrator.openai.model": "gpt-4",
   "aiOrchestrator.anthropic.model": "claude-3-opus-20240229",
   "aiOrchestrator.gemini.model": "gemini-pro",
   "aiOrchestrator.moonshot.model": "moonshot-v1-8k",
-  "aiOrchestrator.routing.preferredCodingModel": "anthropic",
+  
+  // Task Routing Preferences
   "aiOrchestrator.routing.preferredArchitectureModel": "openai",
+  "aiOrchestrator.routing.preferredCodingModel": "anthropic",
   "aiOrchestrator.routing.preferredReasoningModel": "gemini",
   "aiOrchestrator.routing.preferredReviewModel": "moonshot",
+  
+  // UI Options
   "aiOrchestrator.ui.showDetailedProgress": true,
   "aiOrchestrator.history.maxItems": 50
 }
 ```
 
-## 🚀 Usage Examples
+---
 
-### Example 1: Complex Task with Multiple Models
+## 🚀 Usage
 
-**Task:** "Design and implement a REST API for user authentication with JWT tokens"
+### Example 1: Complex Multi-Model Task
+
+**Task:** *"Design and implement a REST API for user authentication with JWT tokens"*
 
 The orchestrator will:
-1. 🏗️ Use **OpenAI** for API architecture and endpoint design
-2. 💻 Use **Claude** for implementing the authentication code
-3. 🔍 Use **Kimi** for security review of the implementation
+1. 🏗️ **OpenAI** designs API architecture and endpoints
+2. 💻 **Claude** implements the authentication code
+3. 🔍 **Kimi** reviews for security vulnerabilities
 
 ### Example 2: Code Review
 
-**Task:** "Review this function for performance issues and security vulnerabilities"
-
 ```typescript
-// Select this code and right-click → "Send to AI Orchestrator"
+// Select this code, right-click → "Send to AI Orchestrator"
 function processUserInput(input) {
   eval(input);  // 😱 Security issue!
-  return database.query("SELECT * FROM users WHERE name = '" + input + "'");
+  return db.query("SELECT * FROM users WHERE name = '" + input + "'");
 }
 ```
 
-### Example 3: Reasoning Task
+**Result:** Comprehensive security review identifying SQL injection and code injection vulnerabilities.
 
-**Task:** "Compare microservices vs monolithic architecture for a startup with 5 developers"
+### Example 3: Architecture Decision
 
-Gemini will analyze the trade-offs and provide a reasoned recommendation.
+**Task:** *"Compare microservices vs monolithic architecture for a startup with 5 developers"*
+
+**Result:** Detailed analysis with trade-offs, recommendations, and migration considerations from Gemini.
+
+---
 
 ## 📊 Task History
 
-The extension maintains a history of your orchestrated tasks. You can:
+The History panel shows all your past orchestrations:
 
-- **View** past results in the History panel
-- **Re-run** tasks with a single click
-- **Export** results to Markdown for documentation
-- **Clear** history when needed
+- **📋 View** past results anytime
+- **🔄 Re-run** tasks with one click
+- **📤 Export** results to Markdown
+- **🗑️ Clear** history when needed
 
-## 🔒 Security
+---
 
-- **API keys** are stored securely using VS Code's Secrets API
-- Keys are **never** sent to third parties or stored in plain text
-- All API calls go directly to the respective AI providers
+## 🔒 Privacy & Security
+
+- ✅ API keys stored using VS Code's secure Secrets API
+- ✅ Keys never stored in plain text or settings files
+- ✅ Direct API calls to AI providers (no intermediaries)
+- ✅ No telemetry or usage data collection
+- ✅ Open source and auditable
+
+---
 
 ## 🐛 Troubleshooting
 
 ### "No AI models available"
-- Make sure you've configured at least one API key
-- Run `AI Orchestrator: Configure` to set up your keys
+→ Configure at least one API key using **"AI Orchestrator: Configure"**
 
 ### Model not responding
-- Check your API key is valid
-- Verify you have credits/quota with the provider
-- Check your internet connection
+→ Check your API key validity and account credits/quota
 
 ### Task taking too long
-- Complex tasks with multiple models may take 30-60 seconds
-- Check the status bar for progress updates
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please read our contributing guidelines and submit pull requests to our GitHub repository.
-
-## 📞 Support
-
-- **Issues**: Report bugs on GitHub Issues
-- **Discussions**: Join our GitHub Discussions for questions
-- **Email**: support@ai-orchestrator.dev
+→ Complex multi-model tasks may take 30-60 seconds. Check the status bar for progress.
 
 ---
 
-**Made with ❤️ by the AI Orchestrator Team**
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+- 🐛 [Report bugs](https://github.com/debugger-lab/ai-orchestrator-vscode/issues/new?labels=bug)
+- 💡 [Request features](https://github.com/debugger-lab/ai-orchestrator-vscode/issues/new?labels=enhancement)
+- 📖 [Improve docs](https://github.com/debugger-lab/ai-orchestrator-vscode/pulls)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 💬 Support
+
+- **📧 Email**: [support@debuggerlab.com](mailto:support@debuggerlab.com)
+- **🐛 Issues**: [GitHub Issues](https://github.com/debugger-lab/ai-orchestrator-vscode/issues)
+- **💬 Discussions**: [GitHub Discussions](https://github.com/debugger-lab/ai-orchestrator-vscode/discussions)
+
+---
+
+<p align="center">
+  <strong>Made with ❤️ by <a href="https://debuggerlab.com">Debugger Lab</a></strong>
+</p>
+
+<p align="center">
+  <sub>© 2026 Debugger Lab. All rights reserved.</sub>
+</p>

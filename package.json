@@ -1,25 +1,76 @@
 {
   "name": "ai-orchestrator",
-  "displayName": "AI Orchestrator",
-  "description": "Intelligently orchestrate multiple AI models (ChatGPT, Claude, Gemini, Kimi) for complex tasks with automatic routing and result consolidation",
+  "displayName": "AI Orchestrator - Multi-Model AI Assistant",
+  "description": "Intelligently orchestrate multiple AI models (ChatGPT, Claude, Gemini, Kimi) for complex development tasks with automatic routing, parallel execution, and unified results",
   "version": "1.0.0",
-  "publisher": "ai-orchestrator",
+  "publisher": "debugger-lab",
+  "author": {
+    "name": "Debugger Lab",
+    "email": "support@debuggerlab.com",
+    "url": "https://debuggerlab.com"
+  },
+  "license": "MIT",
   "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#1e1e2e",
+    "theme": "dark"
+  },
+  "badges": [
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/v/debugger-lab.ai-orchestrator",
+      "href": "https://marketplace.visualstudio.com/items?itemName=debugger-lab.ai-orchestrator",
+      "description": "VS Marketplace Version"
+    },
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/i/debugger-lab.ai-orchestrator",
+      "href": "https://marketplace.visualstudio.com/items?itemName=debugger-lab.ai-orchestrator",
+      "description": "Installs"
+    },
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/r/debugger-lab.ai-orchestrator",
+      "href": "https://marketplace.visualstudio.com/items?itemName=debugger-lab.ai-orchestrator",
+      "description": "Rating"
+    }
+  ],
+  "homepage": "https://github.com/debugger-lab/ai-orchestrator-vscode",
+  "bugs": {
+    "url": "https://github.com/debugger-lab/ai-orchestrator-vscode/issues",
+    "email": "support@debuggerlab.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/debugger-lab/ai-orchestrator-vscode.git"
+  },
+  "qna": "https://github.com/debugger-lab/ai-orchestrator-vscode/discussions",
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
     "Machine Learning",
+    "Programming Languages",
+    "Snippets",
     "Other"
   ],
   "keywords": [
     "ai",
+    "artificial intelligence",
     "chatgpt",
     "claude",
     "gemini",
+    "kimi",
+    "moonshot",
+    "openai",
+    "anthropic",
+    "google",
     "orchestration",
     "multi-model",
-    "llm"
+    "llm",
+    "large language model",
+    "code assistant",
+    "ai assistant",
+    "copilot",
+    "code review",
+    "code generation"
   ],
   "activationEvents": [
     "onStartupFinished"
@@ -211,10 +262,5 @@
     "@google/generative-ai": "^0.1.0",
     "marked": "^11.0.0",
     "highlight.js": "^11.9.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/user/ai-orchestrator-vscode.git"
-  },
-  "license": "MIT"
+  }
 }
