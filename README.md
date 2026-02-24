@@ -18,7 +18,7 @@
   <a href="https://marketplace.visualstudio.com/items?itemName=debugger-lab.ai-orchestrator">
     <img src="https://img.shields.io/visual-studio-marketplace/r/debugger-lab.ai-orchestrator?style=flat-square&logo=visual-studio-code&logoColor=white&label=Rating&color=f59e0b" alt="Rating">
   </a>
-  <a href="https://github.com/debugger-lab/ai-orchestrator-vscode/blob/main/LICENSE">
+  <a href="https://github.com/DebuggerLab/ai-orchestrator-vscode/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/debugger-lab/ai-orchestrator-vscode?style=flat-square&color=4285f4" alt="License">
   </a>
 </p>
@@ -49,9 +49,9 @@ Stop switching between ChatGPT, Claude, and other AI assistants. **AI Orchestrat
 
 | Provider | Model | Best For |
 |----------|-------|----------|
-| **OpenAI** | GPT-4, GPT-4 Turbo, GPT-4o | Architecture, Documentation, Roadmaps |
-| **Anthropic** | Claude 3 Opus/Sonnet/Haiku | Coding, Implementation, Debugging |
-| **Google** | Gemini Pro, Gemini 1.5 | Reasoning, Analysis, Trade-offs |
+| **OpenAI** | GPT-4o-mini, GPT-4o, GPT-4 Turbo | Architecture, Documentation, Roadmaps |
+| **Anthropic** | Claude 3.5 Sonnet, Claude 3 Opus/Haiku | Coding, Implementation, Debugging |
+| **Google** | Gemini 2.5 Flash/Pro, Gemini 1.5 | Reasoning, Analysis, Trade-offs |
 | **Moonshot** | Kimi 8k/32k/128k | Code Review, Security Audits |
 
 ### 🎯 Intelligent Task Routing
@@ -103,7 +103,7 @@ Select any code in the editor and right-click to:
 
 ### From VSIX File
 
-1. Download the `.vsix` file from [Releases](https://github.com/debugger-lab/ai-orchestrator-vscode/releases)
+1. Download the `.vsix` file from [Releases](https://github.com/DebuggerLab/ai-orchestrator-vscode/releases)
 2. In VS Code, go to Extensions
 3. Click `...` → **"Install from VSIX..."**
 4. Select the downloaded file
@@ -135,9 +135,9 @@ Select any code in the editor and right-click to:
 ```json
 {
   // Model Selection
-  "aiOrchestrator.openai.model": "gpt-4",
-  "aiOrchestrator.anthropic.model": "claude-3-opus-20240229",
-  "aiOrchestrator.gemini.model": "gemini-pro",
+  "aiOrchestrator.openai.model": "gpt-4o-mini",
+  "aiOrchestrator.anthropic.model": "claude-3-5-sonnet-20241022",
+  "aiOrchestrator.gemini.model": "gemini-2.5-flash",
   "aiOrchestrator.moonshot.model": "moonshot-v1-8k",
   
   // Task Routing Preferences
@@ -223,9 +223,9 @@ The History panel shows all your past orchestrations:
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
-- 🐛 [Report bugs](https://github.com/debugger-lab/ai-orchestrator-vscode/issues/new?labels=bug)
-- 💡 [Request features](https://github.com/debugger-lab/ai-orchestrator-vscode/issues/new?labels=enhancement)
-- 📖 [Improve docs](https://github.com/debugger-lab/ai-orchestrator-vscode/pulls)
+- 🐛 [Report bugs](https://github.com/DebuggerLab/ai-orchestrator-vscode/issues/new?labels=bug)
+- 💡 [Request features](https://github.com/DebuggerLab/ai-orchestrator-vscode/issues/new?labels=enhancement)
+- 📖 [Improve docs](https://github.com/DebuggerLab/ai-orchestrator-vscode/pulls)
 
 ---
 
@@ -238,8 +238,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 💬 Support
 
 - **📧 Email**: [support@debuggerlab.com](mailto:support@debuggerlab.com)
-- **🐛 Issues**: [GitHub Issues](https://github.com/debugger-lab/ai-orchestrator-vscode/issues)
-- **💬 Discussions**: [GitHub Discussions](https://github.com/debugger-lab/ai-orchestrator-vscode/discussions)
+- **🐛 Issues**: [GitHub Issues](https://github.com/DebuggerLab/ai-orchestrator-vscode/issues)
+- **💬 Discussions**: [GitHub Discussions](https://github.com/DebuggerLab/ai-orchestrator-vscode/discussions)
 
 ---
 

@@ -5,6 +5,29 @@ All notable changes to the **AI Orchestrator** extension will be documented in t
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-02-24
+
+### 🔄 Updated
+
+#### Organization Migration
+- Migrated repository to DebuggerLab organization
+- Updated all repository URLs to use `DebuggerLab/ai-orchestrator-vscode`
+
+#### Model Updates
+- **OpenAI**: Updated default model to `gpt-4o-mini` (faster and more cost-effective)
+- **Anthropic**: Updated default model to `claude-3-5-sonnet-20241022` (latest Sonnet)
+- **Gemini**: Updated default model to `gemini-2.5-flash` (latest flash model)
+- Added new model options: `gpt-4o`, `gemini-2.5-pro`, `gemini-1.5-flash`
+
+#### Dependencies
+- Updated `@google/generative-ai` to `^0.21.0` for latest API compatibility
+
+### 🔗 Synced with AI Orchestrator Core
+- Aligned model configurations with main AI Orchestrator project
+- Improved consistency with backend model handling
+
+---
+
 ## [1.0.0] - 2026-02-18
 
 ### 🎉 Initial Release
@@ -63,4 +86,4 @@ We're excited to announce the first public release of AI Orchestrator!
 
 ---
 
-**Full Changelog**: https://github.com/debugger-lab/ai-orchestrator-vscode/commits/v1.0.0
+**Full Changelog**: https://github.com/DebuggerLab/ai-orchestrator-vscode/commits/v1.0.0

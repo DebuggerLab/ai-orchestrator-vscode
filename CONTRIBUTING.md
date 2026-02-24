@@ -179,7 +179,7 @@ When reporting bugs, please include:
 7. **Screenshots** (if applicable)
 8. **Error logs** from Developer Tools (`Help > Toggle Developer Tools`)
 
-[Create a Bug Report](https://github.com/debugger-lab/ai-orchestrator-vscode/issues/new?labels=bug&template=bug_report.md)
+[Create a Bug Report](https://github.com/DebuggerLab/ai-orchestrator-vscode/issues/new?labels=bug&template=bug_report.md)
 
 ## Requesting Features
 
@@ -190,13 +190,13 @@ We love feature requests! When submitting one, please:
 3. **Describe your proposed solution**
 4. **Consider alternatives** you've thought about
 
-[Request a Feature](https://github.com/debugger-lab/ai-orchestrator-vscode/issues/new?labels=enhancement&template=feature_request.md)
+[Request a Feature](https://github.com/DebuggerLab/ai-orchestrator-vscode/issues/new?labels=enhancement&template=feature_request.md)
 
 ## Questions?
 
 Feel free to reach out:
 - 📧 Email: [support@debuggerlab.com](mailto:support@debuggerlab.com)
-- 💬 GitHub Discussions: [Start a Discussion](https://github.com/debugger-lab/ai-orchestrator-vscode/discussions)
+- 💬 GitHub Discussions: [Start a Discussion](https://github.com/DebuggerLab/ai-orchestrator-vscode/discussions)
 
 ---
 

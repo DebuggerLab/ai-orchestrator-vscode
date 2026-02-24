@@ -2,7 +2,7 @@
   "name": "ai-orchestrator",
   "displayName": "AI Orchestrator - Multi-Model AI Assistant",
   "description": "Intelligently orchestrate multiple AI models (ChatGPT, Claude, Gemini, Kimi) for complex development tasks with automatic routing, parallel execution, and unified results",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "debugger-lab",
   "author": {
     "name": "Debugger Lab",
@@ -32,16 +32,16 @@
       "description": "Rating"
     }
   ],
-  "homepage": "https://github.com/debugger-lab/ai-orchestrator-vscode",
+  "homepage": "https://github.com/DebuggerLab/ai-orchestrator-vscode",
   "bugs": {
-    "url": "https://github.com/debugger-lab/ai-orchestrator-vscode/issues",
+    "url": "https://github.com/DebuggerLab/ai-orchestrator-vscode/issues",
     "email": "support@debuggerlab.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/debugger-lab/ai-orchestrator-vscode.git"
+    "url": "https://github.com/DebuggerLab/ai-orchestrator-vscode.git"
   },
-  "qna": "https://github.com/debugger-lab/ai-orchestrator-vscode/discussions",
+  "qna": "https://github.com/DebuggerLab/ai-orchestrator-vscode/discussions",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -179,21 +179,21 @@
       "properties": {
         "aiOrchestrator.openai.model": {
           "type": "string",
-          "default": "gpt-4",
+          "default": "gpt-4o-mini",
           "description": "OpenAI model to use for architecture/roadmap tasks",
-          "enum": ["gpt-4", "gpt-4-turbo", "gpt-4o", "gpt-3.5-turbo"]
+          "enum": ["gpt-4o-mini", "gpt-4o", "gpt-4-turbo", "gpt-4", "gpt-3.5-turbo"]
         },
         "aiOrchestrator.anthropic.model": {
           "type": "string",
-          "default": "claude-3-opus-20240229",
+          "default": "claude-3-5-sonnet-20241022",
           "description": "Anthropic Claude model to use for coding tasks",
-          "enum": ["claude-3-opus-20240229", "claude-3-sonnet-20240229", "claude-3-haiku-20240307"]
+          "enum": ["claude-3-5-sonnet-20241022", "claude-3-opus-20240229", "claude-3-sonnet-20240229", "claude-3-haiku-20240307"]
         },
         "aiOrchestrator.gemini.model": {
           "type": "string",
-          "default": "gemini-pro",
+          "default": "gemini-2.5-flash",
           "description": "Google Gemini model to use for reasoning tasks",
-          "enum": ["gemini-pro", "gemini-pro-vision", "gemini-1.5-pro"]
+          "enum": ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-1.5-pro", "gemini-1.5-flash"]
         },
         "aiOrchestrator.moonshot.model": {
           "type": "string",
@@ -259,7 +259,7 @@
   "dependencies": {
     "openai": "^4.20.0",
     "@anthropic-ai/sdk": "^0.10.0",
-    "@google/generative-ai": "^0.1.0",
+    "@google/generative-ai": "^0.21.0",
     "marked": "^11.0.0",
     "highlight.js": "^11.9.0"
   }

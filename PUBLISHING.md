@@ -256,7 +256,7 @@ git tag -a v1.0.0 -m "Release v1.0.0"
 git push origin v1.0.0
 
 # Create a GitHub Release
-# Go to: https://github.com/debugger-lab/ai-orchestrator-vscode/releases/new
+# Go to: https://github.com/DebuggerLab/ai-orchestrator-vscode/releases/new
 ```
 
 ---
@@ -414,7 +414,7 @@ vsce unpublish debugger-lab.ai-orchestrator
 If you encounter issues with publishing:
 
 - 📧 **Email**: support@debuggerlab.com
-- 🐛 **GitHub Issues**: https://github.com/debugger-lab/ai-orchestrator-vscode/issues
+- 🐛 **GitHub Issues**: https://github.com/DebuggerLab/ai-orchestrator-vscode/issues
 
 ---
 
