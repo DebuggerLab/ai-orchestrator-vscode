@@ -5,7 +5,7 @@
 import { BaseModelClient, ModelResponse } from './BaseClient';
 
 export class AnthropicClient extends BaseModelClient {
-    constructor(apiKey: string, modelName: string = 'claude-3-opus-20240229') {
+    constructor(apiKey: string, modelName: string = 'claude-3-5-sonnet-20240620') {
         super(apiKey, modelName, 'Anthropic');
     }
 
