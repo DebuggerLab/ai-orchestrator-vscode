@@ -2,7 +2,7 @@
   "name": "ai-orchestrator",
   "displayName": "AI Orchestrator - Multi-Model AI Assistant",
   "description": "Intelligently orchestrate multiple AI models (ChatGPT, Claude, Gemini, Kimi) for complex development tasks with automatic routing, parallel execution, and unified results",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "publisher": "debugger-lab",
   "author": {
     "name": "Debugger Lab",
@@ -32,16 +32,17 @@
       "description": "Rating"
     }
   ],
-  "homepage": "https://github.com/DebuggerLab/ai-orchestrator-vscode",
+  "homepage": "https://github.com/DebuggerLab/ai-orchestrator/tree/vscode-extension",
   "bugs": {
-    "url": "https://github.com/DebuggerLab/ai-orchestrator-vscode/issues",
+    "url": "https://github.com/DebuggerLab/ai-orchestrator/issues",
     "email": "support@debuggerlab.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DebuggerLab/ai-orchestrator-vscode.git"
+    "url": "https://github.com/DebuggerLab/ai-orchestrator.git",
+    "directory": "vscode-extension"
   },
-  "qna": "https://github.com/DebuggerLab/ai-orchestrator-vscode/discussions",
+  "qna": "https://github.com/DebuggerLab/ai-orchestrator/discussions",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -185,9 +186,9 @@
         },
         "aiOrchestrator.anthropic.model": {
           "type": "string",
-          "default": "claude-3-5-sonnet-20241022",
+          "default": "claude-3-5-sonnet-20240620",
           "description": "Anthropic Claude model to use for coding tasks",
-          "enum": ["claude-3-5-sonnet-20241022", "claude-3-opus-20240229", "claude-3-sonnet-20240229", "claude-3-haiku-20240307"]
+          "enum": ["claude-3-5-sonnet-20240620", "claude-sonnet-4-6", "claude-opus-4-6", "claude-3-opus-20240229", "claude-3-haiku-20240307"]
         },
         "aiOrchestrator.gemini.model": {
           "type": "string",
